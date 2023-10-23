@@ -1,0 +1,19 @@
+.root {
+  @apply w-full flex flex-col p-5 items-center;
+}
+
+.logo {
+  @apply h-[100px] flex items-center w-full pl-5 mb-14;
+}
+
+.title {
+  @apply text-5xl font-bold leading-[60px] text-center mb-10;
+}
+
+.subTitle {
+  @apply text-2xl font-bold leading-[30px] text-center mb-24;
+}
+
+.content {
+  @apply text-xl leading-[24px] max-w-[600px] mb-4;
+}
