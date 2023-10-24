@@ -3,7 +3,7 @@
 
 Get the code.
 
- <pre>git clone https://github.com/Challenge-day/ChallengeWebApp.git</pre>
+ <pre>git clone https://github.com/Challenge-day/ChallengeWebApp.git </pre>
  
 Install required dependencies
 
@@ -19,7 +19,7 @@ Upload builds folder to server and deploy
 
 Get the code.
 
- <pre>git clone https://github.com/ubaimutl/react-portfolio.git</pre>
+ <pre>git clone https://github.com/Challenge-day/ChallengeWebApp.git </pre>
  
 Install required dependencies
 
