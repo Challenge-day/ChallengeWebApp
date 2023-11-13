@@ -1,15 +1,38 @@
 .root {
-  @apply w-full flex flex-col p-5 items-center;
+	@apply w-full flex flex-col p-5 items-center min-h-[100vh] bg-white;
 }
 
 .logo {
-  @apply h-[100px] flex items-center w-full pl-5 mb-14;
+	@apply h-[100px] flex items-center w-full pl-5 mb-14;
 }
 
 .title {
-  @apply text-5xl font-bold leading-[60px] text-center mt-20;
+	@apply w-full sm:w-fit text-xl sm:text-3xl md:text-5xl font-bold leading-[24px] sm:leading-[24px] md:leading-[60px] text-left sm:text-center text-black mt-4;
 }
 
 .content {
-  @apply text-xl leading-[24px] max-w-[600px] text-center mb-10;
+	@apply text-xl leading-[24px] max-w-[600px] text-center mb-10;
+}
+
+.selectButton {
+	@apply w-full sm:w-[200px] text-center px-[0px] py-[12px] bg-[#cdcdcd] font-bold text-[#000] text-[20px] cursor-pointer;
+}
+
+.active {
+	background-color: #5f69bd !important;
+}
+
+.link {
+	@apply flex items-center justify-center text-[#000] bg-[#cdcdcd] text-[16px] font-bold rounded-md mb-20 cursor-pointer;
+}
+
+.input {
+	@apply text-[#000] bg-[#cdcdcd] text-[16px] font-bold rounded-md p-3 w-full sm:w-[500px] h-[40px] my-10 sm:my-14;
+	transition: all 0.4s ease 0s;
+	&:hover {
+		border: 1px solid #cdcdcd;
+	}
+	&:focus-visible {
+		outline: none;
+	}
 }

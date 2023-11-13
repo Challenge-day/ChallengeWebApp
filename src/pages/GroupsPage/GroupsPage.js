@@ -1,6 +1,5 @@
 import Header from 'components/Layout/Header';
 import s from './GroupsPage.module.css';
-import { SvgLogo } from 'assets/svg';
 
 const groupsData = [
 	{ groupName: 'Group A', days: 2700 },

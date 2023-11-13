@@ -1,59 +1,48 @@
-.root {
-	@apply w-full flex flex-col p-5 items-center min-h-[100vh] relative;
-}
-
-.logo {
-	@apply h-[100px] flex items-center w-full pl-5 mb-14;
-}
-
-.title {
-	@apply text-5xl font-bold leading-[60px] text-center mb-10;
-}
-
-.subTitle {
-	@apply text-xl font-medium leading-[30px] my-8 text-black sm:text-white max-w-[600px];
-}
-
-.content {
-	@apply text-xl leading-[24px] max-w-[600px] mb-8 text-black sm:text-white;
-}
-
-.link {
-	@apply flex items-center justify-center text-[#000] bg-[#cdcdcd] text-[16px] font-bold rounded-md mb-20 cursor-pointer;
-
-	&:hover {
-		opacity: 0.7;
-	}
-}
-
-.input {
-	@apply text-[#000] bg-[#cdcdcd] text-[16px] font-bold rounded-md p-3 w-full sm:w-[500px] h-[40px] mb-20;
-	transition: all 0.4s ease 0s;
-	&:hover {
-		border: 1px solid #cdcdcd;
-	}
-	&:focus-visible {
-		outline: none;
-	}
-}
-@media (max-width: 640px) {
-	.root {
-		@apply bg-white;
-	}
-	.logo {
-		display: none;
-	}
-}
-.payContent {
-	padding: 0px !important;
-}
-.product {
+.paymentForm {
 	width: 100%;
-	max-width: 450px;
-	margin: auto;
-	box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.4);
-	border-radius: 10px;
-	overflow: hidden;
+	align-self: center;
+	box-shadow: 0px 0px 0px 0.5px rgba(50, 50, 93, 0.1),
+		0px 2px 5px 0px rgba(50, 50, 93, 0.1), 0px 1px 1.5px 0px rgba(0, 0, 0, 0.07);
+	border-radius: 7px;
+	padding: 10px;
+}
+
+.paymentMessage {
+	color: rgb(105, 115, 134);
+	font-size: 16px;
+	line-height: 20px;
+	padding-top: 12px;
+	text-align: center;
+}
+
+.paymentElement {
+	margin-bottom: 24px;
+}
+
+/* Buttons and links */
+.payButton {
+	background: #5469d4;
+	font-family: Arial, sans-serif;
+	color: #ffffff;
+	border-radius: 4px;
+	border: 0;
+	padding: 12px 16px;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	display: block;
+	transition: all 0.2s ease;
+	box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+	width: 100%;
+}
+
+.payButton:hover {
+	filter: contrast(115%);
+}
+
+.payButton:disabled {
+	opacity: 0.5;
+	cursor: default;
 }
 
 /* spinner/processing state, errors */
@@ -117,5 +106,12 @@
 	100% {
 		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.paymentForm {
+		width: 80vw;
+		min-width: initial;
 	}
 }

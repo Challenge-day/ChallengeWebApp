@@ -16,7 +16,7 @@ const Button = ({
 		<div
 			className={cn(
 				s.button,
-				`w-[200px] h-[40px] px-[0px] py-[16px] bg-[#fff] font-bold text-[#25318d] hover:text-black text-[20px] rounded-[20px]`,
+				`w-full sm:w-[250px] h-[40px] px-[0px] py-[16px] bg-[#5f69bd] font-bold text-[#fff] text-[20px] rounded-[10px]`,
 			)}
 		>
 			{title}

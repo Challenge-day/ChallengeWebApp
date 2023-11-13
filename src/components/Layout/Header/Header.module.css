@@ -1,20 +1,24 @@
 .root {
-  @apply relative flex flex-row justify-between py-8 items-center px-2 sm:px-16;
+	@apply relative flex flex-row justify-between py-8 items-center px-2 sm:px-16;
+	margin-top: -1.25rem;
+	width: calc(100% + 2.5rem);
+	margin-bottom: 1.25rem;
+	background: linear-gradient(90deg, #002ab0 0%, #003cf6 100%);
 
-  .nav {
-    @apply flex gap-8 cursor-pointer text-white stroke-2 items-center justify-between xl:mr-40 w-full;
+	.nav {
+		@apply flex gap-8 cursor-pointer text-white stroke-2 items-center justify-center sm:justify-between xl:mr-40 w-full;
 
-    .logo {
-      @apply hidden sm:flex w-[150px] h-[40px];
-    }
+		.logo {
+			@apply hidden sm:flex w-[150px] h-[40px];
+		}
 
-    .itemsWrapper {
-      @apply flex space-x-4 sm:space-x-8 md:space-x-16 p-4 rounded-full;
-      background-color: rgba(255, 255, 255, 0.35);
+		.itemsWrapper {
+			@apply flex space-x-4 sm:space-x-8 md:space-x-16 p-4 rounded-full;
+			background-color: rgba(255, 255, 255, 0.35);
 
-      .item {
-        @apply flex font-bold text-base sm:text-lg text-white items-center;
-      }
-    }
-  }
+			.item {
+				@apply flex font-bold text-base sm:text-lg text-white items-center;
+			}
+		}
+	}
 }

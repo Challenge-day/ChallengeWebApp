@@ -1,5 +1,4 @@
 import s from './LandingPage.module.css';
-import Footer from 'components/Layout/Footer';
 import { SvgLogo } from 'assets/svg';
 import Button from 'components/Button';
 import { Link } from 'react-router-dom';
@@ -16,7 +15,7 @@ function LandingPage() {
 				Wake Up Challenge is built on the belief that challenges provide a
 				powerful platform for personal growth, creativity, and connection.
 			</div>
-			<Link to={'/register'}>
+			<Link to={'/register'} className="w-full sm:w-[200px]">
 				<Button w={200} h={40} title={"Let's Go"} />
 			</Link>
 			{/* 

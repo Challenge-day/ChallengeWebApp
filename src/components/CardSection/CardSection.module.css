@@ -1,0 +1,7 @@
+.button {
+  @apply flex items-center justify-center cursor-pointer opacity-100 font-nova-mono;
+  transition: all .4s ease 0s;
+  &:hover {
+    @apply opacity-70;
+  }
+}

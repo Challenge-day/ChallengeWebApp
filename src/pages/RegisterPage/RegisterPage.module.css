@@ -1,36 +1,75 @@
 .root {
-  @apply w-full flex flex-col p-5 items-center;
+	@apply w-full flex flex-col items-center min-h-[100vh];
 }
 
 .logo {
-  @apply h-[100px] flex items-center w-full pl-5 mb-14;
+	@apply h-[100px] flex items-center w-full pl-5 mb-14;
 }
 
 .title {
-  @apply text-5xl font-bold leading-[60px];
+	@apply text-5xl font-bold leading-[60px];
 }
 
 .content {
-  @apply text-[22px] leading-[40px] max-w-[700px] text-center my-10;
+	@apply text-[22px] leading-[40px] max-w-[700px] text-center my-10;
+	align-self: center;
+}
+
+.topContent {
+	@apply p-5 w-full flex flex-col;
+}
+
+.bottomContent {
+	@apply bg-white h-full w-full flex flex-col items-center pb-4;
+}
+.button {
+	@apply flex items-center justify-center cursor-pointer opacity-100 font-nova-mono;
+	transition: all 0.4s ease 0s;
+	&:hover {
+		@apply opacity-70;
+	}
 }
 
 .input {
-  @apply text-[#384ad3] text-[16px] font-bold rounded-md p-3 w-[250px] md:w-[300px] h-[40px];
-  transition: all .4s ease 0s;
-  border: 1px solid #384ad3;
-  &:hover {
-    border: 1px solid red;
-  }
-  &:focus-visible {
-    outline: none;
-  }
+	@apply text-[#384ad3] text-[16px] font-bold rounded-md p-3 w-[250px] md:w-[300px] h-[40px];
+	transition: all 0.4s ease 0s;
+	border: 1px solid #384ad3;
+	&:hover {
+		border: 1px solid red;
+	}
+	&:focus-visible {
+		outline: none;
+	}
+}
+
+.input2 {
+	@apply text-[#000] text-[16px] font-bold rounded-md p-3 w-full h-[40px];
+	transition: all 0.4s ease 0s;
+	border: 1px solid #000;
+	&:hover {
+		border: 3px solid #000;
+	}
+	&:focus-visible {
+		outline: none;
+	}
+}
+
+.textField {
+	@apply text-[#000] text-[16px] font-bold rounded-md p-3 w-full;
+	transition: all 0.4s ease 0s;
+	border: 1px solid #000;
+	&:hover {
+		border: 3px solid #000;
+	}
+	&:focus-visible {
+		outline: none;
+	}
 }
 
 .select {
-  @apply w-[250px] md:w-[300px] text-[#384ad3] h-[40px];
+	@apply w-[250px] md:w-[300px] text-[#384ad3] h-[30px] md:h-[40px];
 
-  div[class*="singleValue"] {
-    color: #384ad3;
-  }
-  
+	div[class*='singleValue'] {
+		color: #384ad3;
+	}
 }
